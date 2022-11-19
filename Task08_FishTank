@@ -1,0 +1,26 @@
+#include <iostream>
+
+int main()
+{
+	int length;
+	int width;
+	int height;
+
+	double percentage;
+
+	std::cin >> length;
+	std::cin >> width;
+	std::cin >> height;
+	std::cin >> percentage;
+
+	double volume = (length * width * height) * 0.001;
+
+	double litres = volume - (volume * (percentage / 100));
+	
+	
+	std::cout.precision(2);
+	std::cout << std::fixed;
+	std::cout << litres << std::endl;
+	
+	return 0;
+}
