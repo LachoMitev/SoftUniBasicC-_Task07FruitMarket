@@ -1,0 +1,34 @@
+#include <iostream>
+
+int main()
+{
+	double priceStrawberries;
+
+	double bananas;
+
+	double oranges;
+
+	double raspberries;
+
+	double strawberries;
+
+	std::cin >> priceStrawberries;
+	std::cin >> bananas;
+	std::cin >> oranges;
+	std::cin >> raspberries;
+	std::cin >> strawberries;
+
+	double priceRaspberries = priceStrawberries * 0.5;
+
+	double priceOranges = priceRaspberries - (priceRaspberries * 0.4);
+
+	double priceBananas = priceRaspberries - (priceRaspberries * 0.8);
+	
+	double sum = (bananas * priceBananas) + (oranges * priceOranges) + (raspberries * priceRaspberries) + (strawberries * priceStrawberries);
+
+	std::cout.precision(2);
+	std::cout << std::fixed;
+	std::cout << sum << std::endl;
+
+	return 0;
+}
