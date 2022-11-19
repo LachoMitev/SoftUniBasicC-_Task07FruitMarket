@@ -1,0 +1,44 @@
+#include <iostream>
+
+int main()
+{
+	int daysCampaign;
+
+	int bakers;
+
+	int cakes;
+
+	int waffles;
+
+	int pancakes;
+
+	double priceCakes = 45;
+	double priceWaffles = 5.80;
+	double pricePancakes = 3.20;
+	 
+	double sum;
+
+	std::cin >> daysCampaign;
+
+	std::cin >> bakers;
+
+	std::cin >> cakes;
+
+	std::cin >> waffles;
+
+	std::cin >> pancakes;
+
+	sum = daysCampaign * bakers * ((cakes * priceCakes) + (waffles * priceWaffles) + (pancakes * pricePancakes));
+
+	double expenses = sum / 8;
+
+	double finalSum = sum - expenses;
+
+	std::cout.precision(2);
+	std::cout << std::fixed;
+	std::cout << finalSum << std::endl;
+
+
+	return 0;
+
+}
