@@ -1,0 +1,18 @@
+#include <iostream>
+
+int main()
+{
+	double depositSum;
+	int depositTerm;
+	double interestPercentage;
+
+	std::cin >> depositSum;
+	std::cin >> depositTerm;
+	std::cin >> interestPercentage;
+
+	double finalSum = depositSum + depositTerm * ((depositSum * interestPercentage/100 ) / 12);
+
+	std::cout << finalSum << std::endl;
+
+	return 0;
+}
