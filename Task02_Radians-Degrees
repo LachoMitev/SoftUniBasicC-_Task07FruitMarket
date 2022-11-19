@@ -1,0 +1,16 @@
+#include <iostream>
+#include <math.h>
+
+int main()
+{
+	double rad;
+	
+	std::cin >> rad;
+
+	double deg = rad * 180 / 3.14;
+	
+	std::cout << std::round(deg) << std::endl;
+
+	return 0;
+
+}
