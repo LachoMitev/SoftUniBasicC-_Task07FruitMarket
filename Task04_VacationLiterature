@@ -1,0 +1,21 @@
+#include <iostream>
+
+int main()
+{
+	int pagesBook;
+
+	int pagesPerHour;
+
+	int daysCount;
+
+	std::cin >> pagesBook;
+	std::cin >> pagesPerHour;
+	std::cin >> daysCount;
+
+
+	int hours = pagesBook / pagesPerHour / daysCount;
+
+	std::cout << hours << std::endl;
+
+	return 0;
+}
