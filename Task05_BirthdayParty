@@ -1,0 +1,19 @@
+#include <iostream>
+
+int main()
+{
+	int rent;
+	std::cin >> rent;
+
+	double cake = 0.20 * rent;
+
+	double drinks = cake - cake * 0.45;
+
+	double animator = rent / 3.0;
+
+	double sum = rent + cake + drinks + animator;
+
+	std::cout << sum << std::endl;
+
+	return 0;
+}
